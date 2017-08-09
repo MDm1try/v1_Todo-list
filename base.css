@@ -1,0 +1,166 @@
+body {
+    line-height: 1.4em;
+    max-width: 420px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.todolist {
+    margin-top: 150px; 
+    text-align: center;
+}
+
+h1 {
+    position: relative;
+    font-size: 50px;
+    font-weight: 100;
+    color: rgba(175, 50, 110, 0.55);
+    bottom: -35px;
+}
+
+#new-work {  
+    position: relative;
+    width: 420px;
+    font-size: 18px;
+    padding: 16px 30px 16px 50px;
+    /* border: none; */
+    background: rgba(194, 194, 194, 0.4);
+    border: 1px solid darkgray;
+}
+
+#checkbox-all {
+    position: relative;
+    top: 40px;
+    left: -190px; 
+    z-index: 1;
+     /* none - к элементу не применяется специальный стиль */
+    -webkit-appearance: none; 
+    /* поворачиваем элемент */
+    transform: rotate(90deg);
+}
+
+#checkbox-all:checked:before {
+    color: green;
+}
+
+#checkbox-all:before {
+    content: '❯';
+    font-size: 18px;
+    color:gray; 
+}
+
+#list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+    text-align: left;
+    
+}
+
+.view {
+    margin-top: 0px; 
+    
+}
+
+.todoListItem {
+    position: relative;
+    border: 1px solid #ededed;
+}
+
+.view  .destroy{
+    position: absolute;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    font-size: 24px;
+    -webkit-appearance: none;
+    background: none;
+    border: none; 
+    display: none;
+}
+
+.destroy:after {
+    content: 'x';
+}
+
+ label {
+    display: block;
+    padding: 5px 15px 5px 15px;
+    word-break: break-all;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -30px;
+}
+
+#footer {
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    display: none;
+}
+
+#filter {
+     list-style: none;
+     margin: 0;
+     font-size: 14px;
+}
+
+#filter li {
+    display: inline;
+    margin: 25px;
+    margin-left: -20px;
+    cursor: default;
+}
+
+#filter li:hover {
+    border: 0.5px solid #ed1ded; 
+}
+
+#spanNumber {
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    cursor: default;
+}
+
+#footer #clearItem {
+    position: relative;
+    background: none;
+    border: none; 
+    padding: 0;
+    float: right;
+    margin-top: -22px;
+    display: none;
+}
+
+#footer #clearItem:hover {
+    border: 0.5px solid #ed1ded; 
+}
+
+#list .view .destroy:hover {
+     color: red;
+}
+
+#list .view:hover .destroy {
+     display: block;
+}
+
+.view .checkLi {
+    position: inherit;
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+}
+
+.view .editField {
+    position: relative;
+    z-index: 1;
+     display: none;  
+    padding: 5px 5px 5px 5px;
+    width: 389px;
+    left: 30px;
+    margin-top: -30px;
+    font-size: 18px;
+}
